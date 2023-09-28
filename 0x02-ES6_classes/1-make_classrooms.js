@@ -2,6 +2,10 @@
 import ClassRoom from './0-classroom.js';
 export default function initializeRooms() {
 	const sizes = [19, 20, 34];
-	const classrooms = sizes.map((size) => new ClassRoom(size));
+	const classrooms = [];
+	
+	for (const size of sizes) {
+		classrooms.push(new ClassRoom(size));
+	}
 	return classrooms;
 }
