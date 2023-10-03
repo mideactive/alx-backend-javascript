@@ -1,6 +1,6 @@
-export default function getListStudentIds(city) {
- if(!Array.isArray(city)) {
+export default function getListStudentIds(stdentId = new Array()) {
+ if(!Array.isArray(studentId)) {
     return [];
   }
-  return city.map(student => student.id);
+  return studentId.map(student => student.id);
 }
